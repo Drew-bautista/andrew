@@ -112,7 +112,7 @@ const translations = {
     nav_home: "Home.",
     nav_about: "About.",
     nav_skills: "Skills.",
-    nav_portfolio: "Portfolio.",
+    nav_portfolio: "My Projects.",
     nav_contact: "Contact.",
     hero_title: "We Design & Build Creative Products",
     hero_cta: "Get in touch",
@@ -143,13 +143,15 @@ const translations = {
     contact_send_btn: "Send",
     sending: "Sending...",
     form_success: "Message sent successfully!",
-    form_error: "Failed to send message. Please try again."
+    form_error: "Failed to send message. Please try again.",
+    load_more_work: "Load more work",
+    view_more_github: "View more on GitHub"
   },
   tl: {
     nav_home: "Tahanan.",
     nav_about: "Tungkol.",
     nav_skills: "Kasanayan.",
-    nav_portfolio: "Portfolio.",
+    nav_portfolio: "Aking mga Proyekto.",
     nav_contact: "Makipag-ugnayan.",
     hero_title: "Gumagawa Kami ng Mga Creative na Produkto",
     hero_cta: "Makipag-ugnayan",
@@ -180,13 +182,15 @@ const translations = {
     contact_send_btn: "Ipadala",
     sending: "Nagpapadala...",
     form_success: "Matagumpay na naipadala ang mensahe!",
-    form_error: "Hindi naipadala ang mensahe. Subukan ulit."
+    form_error: "Hindi naipadala ang mensahe. Subukan ulit.",
+    load_more_work: "Tingnan pa ang mga gawa",
+    view_more_github: "Tingnan pa sa GitHub"
   },
   es: {
     nav_home: "Inicio.",
     nav_about: "Acerca de.",
     nav_skills: "Habilidades.",
-    nav_portfolio: "Portafolio.",
+    nav_portfolio: "Mis Proyectos.",
     nav_contact: "Contacto.",
     hero_title: "Diseñamos y Construimos Productos Creativos",
     hero_cta: "Ponte en contacto",
@@ -214,13 +218,18 @@ const translations = {
     contact_address_label: "Dirección:",
     contact_phone_label: "Teléfono:",
     contact_email_label: "Email:",
-    contact_send_btn: "Enviar"
+    contact_send_btn: "Enviar",
+    sending: "Enviando...",
+    form_success: "Mensaje enviado con éxito!",
+    form_error: "Error al enviar mensaje. Por favor, inténtalo de nuevo.",
+    load_more_work: "Ver más trabajos",
+    view_more_github: "Ver más en GitHub"
   },
   fr: {
     nav_home: "Accueil.",
     nav_about: "À propos.",
     nav_skills: "Compétences.",
-    nav_portfolio: "Portfolio.",
+    nav_portfolio: "Mes Projets.",
     nav_contact: "Contact.",
     hero_title: "Nous Concevons et Construisons des Produits Créatifs",
     hero_cta: "Entrer en contact",
@@ -248,13 +257,14 @@ const translations = {
     contact_address_label: "Adresse:",
     contact_phone_label: "Téléphone:",
     contact_email_label: "Email:",
-    contact_send_btn: "Envoyer"
+    contact_send_btn: "Envoyer",
+    load_more_work: "Voir plus de travaux"
   },
   de: {
     nav_home: "Startseite.",
     nav_about: "Über uns.",
     nav_skills: "Fähigkeiten.",
-    nav_portfolio: "Portfolio.",
+    nav_portfolio: "Meine Projekte.",
     nav_contact: "Kontakt.",
     hero_title: "Wir Entwerfen und Bauen Kreative Produkte",
     hero_cta: "Kontakt aufnehmen",
@@ -282,13 +292,14 @@ const translations = {
     contact_address_label: "Adresse:",
     contact_phone_label: "Telefon:",
     contact_email_label: "Email:",
-    contact_send_btn: "Senden"
+    contact_send_btn: "Senden",
+    load_more_work: "Mehr Arbeiten ansehen"
   },
   ja: {
     nav_home: "ホーム。",
     nav_about: "について。",
     nav_skills: "スキル。",
-    nav_portfolio: "ポートフォリオ。",
+    nav_portfolio: "私のプロジェクト。",
     nav_contact: "お問い合わせ。",
     hero_title: "クリエイティブな製品をデザイン・構築します",
     hero_cta: "お問い合わせ",
@@ -316,13 +327,14 @@ const translations = {
     contact_address_label: "住所：",
     contact_phone_label: "電話：",
     contact_email_label: "メール：",
-    contact_send_btn: "送信"
+    contact_send_btn: "送信",
+    load_more_work: "もっと見る"
   },
   ko: {
     nav_home: "홈.",
     nav_about: "소개.",
     nav_skills: "기술.",
-    nav_portfolio: "포트폴리오.",
+    nav_portfolio: "내 프로젝트.",
     nav_contact: "연락처.",
     hero_title: "창의적인 제품을 디자인하고 구축합니다",
     hero_cta: "연락하기",
@@ -350,13 +362,14 @@ const translations = {
     contact_address_label: "주소:",
     contact_phone_label: "전화:",
     contact_email_label: "이메일:",
-    contact_send_btn: "보내기"
+    contact_send_btn: "보내기",
+    load_more_work: "더 많은 작품 보기"
   },
   zh: {
     nav_home: "首页。",
     nav_about: "关于。",
     nav_skills: "技能。",
-    nav_portfolio: "作品集。",
+    nav_portfolio: "我的项目。",
     nav_contact: "联系。",
     hero_title: "我们设计和构建创意产品",
     hero_cta: "联系我们",
@@ -384,7 +397,8 @@ const translations = {
     contact_address_label: "地址：",
     contact_phone_label: "电话：",
     contact_email_label: "邮箱：",
-    contact_send_btn: "发送"
+    contact_send_btn: "发送",
+    load_more_work: "查看更多作品"
   }
 };
 
