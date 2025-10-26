@@ -355,6 +355,34 @@ body.active { overflow: hidden; }
   }
 }
 
+@media (max-width: 600px) {
+  .header .container {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .nav-toggle-btn {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .navbar-actions {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  .navbar-actions select {
+    flex: 1;
+  }
+}
+
 /* Form message styles */
 .form-message {
   padding: 12px 16px;
