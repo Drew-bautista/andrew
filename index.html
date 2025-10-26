@@ -5,7 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANDREW - personal portfolio</title>
+  <title>John Andrew Bautista - Full Stack Developer | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="John Andrew Bautista - Passionate Full Stack Developer specializing in clean web applications with intuitive functionalities. Expert in HTML, CSS, JavaScript, PHP, Laravel, React, Vue, and Angular.">
+  <meta name="keywords" content="John Andrew Bautista, Full Stack Developer, Web Developer, JavaScript, PHP, Laravel, React, Vue, Angular, Portfolio">
+  <meta name="author" content="John Andrew Bautista">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="John Andrew Bautista - Full Stack Developer">
+  <meta property="og:description" content="Passionate Full Stack Developer creating clean web applications with intuitive functionalities. View my portfolio and projects.">
+  <meta property="og:image" content="./assets/images/hero-banner.png">
+  <meta property="og:url" content="https://johnandrewbautista.dev">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="John Andrew Bautista Portfolio">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="John Andrew Bautista - Full Stack Developer">
+  <meta name="twitter:description" content="Passionate Full Stack Developer creating clean web applications with intuitive functionalities.">
+  <meta name="twitter:image" content="./assets/images/hero-banner.png">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#ff7b00">
+  <link rel="canonical" href="https://johnandrewbautista.dev">
 
   <!-- 
     - favicon
@@ -13,9 +38,11 @@
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
   <!-- 
-    - custom css link C:\ANDREW\Portfolio\jack-portfolio-master\jack-portfolio-master\assets\css
+    - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+  <link rel="preload" href="./assets/js/script.js" as="script">
 
   <!-- 
     - google font link
@@ -25,6 +52,52 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
     rel="stylesheet">
+    
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Andrew Bautista",
+    "jobTitle": "Full Stack Developer",
+    "description": "Passionate Full Stack Developer specializing in clean web applications with intuitive functionalities",
+    "url": "https://johnandrewbautista.dev",
+    "image": "./assets/images/hero-banner.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/john-andrew-bautista-32aa72352/",
+      "https://www.facebook.com/profile.php?id=100009521776460",
+      "https://github.com/Drew-bautista"
+    ],
+    "knowsAbout": [
+      "JavaScript",
+      "TypeScript", 
+      "PHP",
+      "Laravel",
+      "React",
+      "Vue.js",
+      "Angular",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Firebase",
+      "Git",
+      "Full Stack Development",
+      "Web Development"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+63-963-198-2029",
+      "contactType": "professional",
+      "email": "johnandrewbauttista.neust@gmail.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rizal",
+      "addressRegion": "Nueva Ecija",
+      "addressCountry": "Philippines"
+    }
+  }
+  </script>
 </head>
 
 <body id="top" class="dark_theme">
@@ -43,8 +116,14 @@
       <div class="navbar-actions">
 
         <select name="language" id="lang">
-          <option value="en">En</option>
-   
+          <option value="en">English</option>
+          <option value="tl">Filipino</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="zh">Chinese</option>
         </select>
 
         <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -63,23 +142,23 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link">Home.</a>
+            <a href="#home" class="navbar-link" data-translate="nav_home">Home.</a>
           </li>
 
           <li>
-            <a href="#about" class="navbar-link">About.</a>
+            <a href="#about" class="navbar-link" data-translate="nav_about">About.</a>
           </li>
 
           <li>
-            <a href="#skills" class="navbar-link">Skills.</a>
+            <a href="#skills" class="navbar-link" data-translate="nav_skills">Skills.</a>
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            <a href="#portfolio" class="navbar-link" data-translate="nav_portfolio">Portfolio.</a>
           </li>
 
           <li>
-            <a href="#contact" class="navbar-link">Contact.</a>
+            <a href="#contact" class="navbar-link" data-translate="nav_contact">Contact.</a>
           </li>
 
         </ul>
@@ -114,9 +193,9 @@
 
         <div class="hero-content">
 
-          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+          <h2 class="h2 hero-title" data-translate="hero_title">We Design & Build Creative Products</h2>
 
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#contact" class="btn btn-primary" data-translate="hero_cta">Get in touch</a>
 
         </div>
 
@@ -179,7 +258,7 @@
               </div>
 
               <h2 class="h2 card-title">
-                4 Year <strong>College</strong>
+                <span data-translate="stats_college">4 Year</span> <strong data-translate="stats_college_strong">College</strong>
               </h2>
 
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -195,7 +274,7 @@
               </div>
 
               <h2 class="h2 card-title">
-                50+ <strong>Completed Projects</strong>
+                <span data-translate="stats_projects">50+</span> <strong data-translate="stats_projects_strong">Completed Projects</strong>
               </h2>
 
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -211,7 +290,7 @@
               </div>
 
               <h2 class="h2 card-title">
-                95+ <strong>Happy Clients</strong>
+                <span data-translate="stats_clients">95+</span> <strong data-translate="stats_clients_strong">Happy Clients</strong>
               </h2>
 
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -239,11 +318,11 @@
 
         <div class="about-content section-content">
 
-          <p class="section-subtitle">About me</p>
+          <p class="section-subtitle" data-translate="about_subtitle">About me</p>
 
-          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+          <h2 class="h3 section-title" data-translate="about_title">Need a Creative Product? I can Help You!</h2>
 
-          <p class="section-text">
+          <p class="section-text" data-translate="about_text">
             Hi! I’m John Andrew Bautista, and I’m a developer who has passion for building clean web applications with intuitive
             functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
             curious about
@@ -253,9 +332,7 @@
           </p>
 
           <div class="btn-group">
-            <button class="btn btn-secondary">Hire me</button>
-
-           <!-- <button class="btn btn-primary">Download cv</button>-->
+            <a href="./CV - ANDREW (UPDATED).pdf" download="CV - John Andrew Bautista.pdf" class="btn btn-secondary" data-translate="download_cv">Download CV</a>
           </div>
 
         </div>
@@ -274,20 +351,20 @@
 
         <div class="skills-content section-content">
 
-          <p class="section-subtitle">My skills</p>
+          <p class="section-subtitle" data-translate="skills_subtitle">My skills</p>
 
-          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+          <h2 class="h3 section-title" data-translate="skills_title">What My Programming Skills Included?</h2>
 
-          <p class="section-text">
+          <p class="section-text" data-translate="skills_text">
             I develop simple, intuitive and responsive user interface that helps users get things done with less effort
             and time
             with those technologies.
           </p>
 
           <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+            <button class="toggle-btn active" data-toggle-btn data-translate="skills_tab">Skills</button>
 
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
+            <button class="toggle-btn" data-toggle-btn data-translate="tools_tab">Tools</button>
           </div>
 
         </div>
@@ -591,11 +668,11 @@
           <li>
             <div class="project-content section-content">
 
-              <p class="section-subtitle">My Works</p>
+              <p class="section-subtitle" data-translate="works_subtitle">My Works</p>
 
-              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+              <h2 class="h3 section-title" data-translate="works_title">See My Works Which Will Amaze You!</h2>
 
-              <p class="section-text">
+              <p class="section-text" data-translate="works_text">
                 We develop the best quality website and application that serves for the long-term. Well-documented, clean, easy and
                 elegant interface
                 helps any non-technical clients.
@@ -614,7 +691,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">Virtual Art Gallery</h3>
 
-                <time class="publish-date" datetime="2022-04">Figma</time>
+                <time class="publish-date" datetime="2022-04">Figma • UI/UX Design</time>
               </div>
 
             </a>
@@ -628,9 +705,8 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h4 card-title">Ecommerce</h3>
-
-                <time class="publish-date" datetime="2022-04">PHP - CSS - JS - HACK</time>
+                <h3 class="h4 card-title">PROJECT HIVE</h3>
+                <time class="publish-date" datetime="2022-04">Laravel • Ionic Vue </time>
               </div>
 
             </a>
@@ -646,8 +722,7 @@
 
               <div class="card-content">
                 <h3 class="h4 card-title">Cars Card Game</h3>
-
-                <time class="publish-date" datetime="2022-04">HTML - CSS - JS</time>
+                <time class="publish-date" datetime="2022-04">HTML5 • CSS3 • JavaScript • Game Logic</time>
               </div>
 
             </a>
@@ -662,9 +737,8 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h4 card-title">Website - Monkey D. Luffy</h3>
-
-                <time class="publish-date" datetime="2022-04">HTML - CSS</time>
+                <h3 class="h4 card-title">Anime Character Showcase</h3>
+                <time class="publish-date" datetime="2022-04">HTML5 • CSS3 • Animations • Responsive Design</time>
               </div>
 
             </a>
@@ -679,9 +753,8 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h4 card-title">Car Rental</h3>
-
-                <time class="publish-date" datetime="2022-04">HTML - CSS - JS</time>
+                <h3 class="h4 card-title">Car Rental System</h3>
+                <time class="publish-date" datetime="2022-04">HTML5 • CSS3 • JavaScript • Local Storage</time>
               </div>
 
             </a>
@@ -697,15 +770,14 @@
 
               <div class="card-content">
                 <h3 class="h4 card-title">Food Delivery App</h3>
-
-                <time class="publish-date" datetime="2022-04">VUE - TS - CSS - HTML</time>
+                <time class="publish-date" datetime="2022-04">Vue.js • TypeScript • CSS3 • REST API</time>
               </div>
 
             </a>
           </li>
 
           <li>
-            <a href="https://github.com/Drew-bautista/Loan-Management-System" class="project-card">
+            <a href="https://rhu.aleczr.link/login" class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/project-7.png" class="w-100"
@@ -713,9 +785,8 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h4 card-title">Loan Management System</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+                <h3 class="h4 card-title">Rural-Health-Unit-Management-System-main</h3>
+                <time class="publish-date" datetime="2022-04">• Laravel </time>
               </div>
 
             </a>
@@ -743,11 +814,11 @@
 
         <div class="contact-content section-content">
 
-          <p class="section-subtitle">Contact</p>
+          <p class="section-subtitle" data-translate="contact_subtitle">Contact</p>
 
-          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+          <h2 class="h3 section-title" data-translate="contact_title">Have You Any Project? Please Drop a Message</h2>
 
-          <p class="section-text">
+          <p class="section-text" data-translate="contact_text">
             Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
           </p>
 
@@ -760,7 +831,7 @@
               </div>
 
               <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
+                <h3 class="h4 contact-item-title" data-translate="contact_address_label">Address:</h3>
 
                 <address class="contact-info">
                   Rizal, Nueva Ecija
@@ -776,7 +847,7 @@
               </div>
 
               <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
+                <h3 class="h4 contact-item-title" data-translate="contact_phone_label">Phone:</h3>
 
                 <a href="tel:01234567789" class="contact-info">0963 198 2029</a>
 
@@ -792,7 +863,7 @@
               </div>
 
               <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
+                <h3 class="h4 contact-item-title" data-translate="contact_email_label">Email:</h3>
 
                 
 
@@ -843,7 +914,7 @@
 
         </div>
 
-        <form action="mailto:johnandrewabautista.neust@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <form action="https://formspree.io/f/xpwagdor" method="POST" class="contact-form" id="contact-form">
 
           <div class="form-wrapper">
               <label for="name" class="form-label">Name</label>
@@ -873,7 +944,7 @@
               </div>
           </div>
   
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary" data-translate="contact_send_btn">Send</button>
   
       </form>
 
@@ -925,7 +996,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=4"></script>
 
   <!-- 
     - ionicon link
